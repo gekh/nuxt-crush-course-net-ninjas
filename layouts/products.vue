@@ -1,26 +1,26 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/products">Net Ninja Merch</NuxtLink>
+    <header class="chadow-sm bg-white">
+      <nav class="container mx-auto p-4">
+        <NuxtLink to="/products" class="font-bold">Net Ninja Merch</NuxtLink>
       </nav>
     </header>
 
     <!-- output the page content -->
-    <div>
+    <div class="container mx-auto p-4">
       <slot />
     </div>
 
-    <footer>
-      <ul>
+    <footer class="container mx-auto p-4 flex justify-betweenn border-t-2">
+      <ul class="flex gap-4">
         <li>
-          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/" class="btn">Home</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/about">About</NuxtLink>
+          <NuxtLink to="/about" class="btn">About</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/products">Products</NuxtLink>
+          <NuxtLink to="/products" class="btn">Products</NuxtLink>
         </li>
       </ul>
     </footer>
@@ -28,7 +28,4 @@
 </template>
 
 <style scoped>
-.router-link-exact-active {
-  color: #12b488
-}
 </style>
