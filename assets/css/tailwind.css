@@ -14,4 +14,8 @@ body {
   .btn.router-link-exact-active {
     @apply bg-[grey]
   }
+
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
 }
